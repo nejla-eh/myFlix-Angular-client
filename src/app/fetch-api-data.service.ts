@@ -12,7 +12,7 @@ const apiUrl = "https://my-flix-nejla.herokuapp.com";
 @Injectable({
   providedIn: "root",
 })
-export class UserRegistrationService {
+export class FetchApiDataService {
   constructor(private http: HttpClient) {}
 
   userRegistration(userDetails: any): Observable<any> {
