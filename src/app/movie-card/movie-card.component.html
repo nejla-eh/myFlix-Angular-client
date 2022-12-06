@@ -1,0 +1,21 @@
+<div class="movies" style="display: flex">
+    <mat-card *ngFor="let movie of movies;" style="flex: 1 1 auto;" class="mat-card">
+        <img style="width: 100%" src={{movie.ImagePath}} alt={{movie.Title}} />
+        <mat-card-actions>
+            <button mat-button (click)="openGenre(movie)">
+                Genre
+            </button>
+            <button mat-button (click)="openDirector(movie)">
+                Director
+            </button>
+            <button mat-button (click)="openMovieDetails(movie)">
+                Details
+            </button>
+            <a class="add-to-favorite-btn" (click)="toggleFavorite(movie._id)">
+                <mat-icon [class]="movieIsFavorite(movie._id) ? 'favorite' : 'non-favorite'">
+                    {{ movieIsFavorite(movie._id) ? 'favorite' : 'favorite_border' }}
+                </mat-icon>
+            </a>
+        </mat-card-actions>
+    </mat-card>
+</div>

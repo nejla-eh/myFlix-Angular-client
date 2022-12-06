@@ -1,0 +1,23 @@
+$color: rgb(179, 176, 179);
+$backgroundColor: #252127;
+
+:host {
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: darken($backgroundColor, 5%);
+    padding: 0 0.5rem;
+    &--left {
+      .mat-mdc-button {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 600;
+      }
+    }
+    .mat-mdc-button {
+      height: 4rem;
+      color: $color;
+      font-size: 1.1rem;
+      font-family: "Franklin Gothic Light", "Arial Narrow", Arial, sans-serif;
+    }
+  }
+}

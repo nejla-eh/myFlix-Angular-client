@@ -1,0 +1,24 @@
+$color: rgb(200, 200, 200);
+$backgroundColor: #312b34;
+
+:host {
+  .genre-dialog {
+    padding: 1rem;
+    color: $color;
+    background-color: $backgroundColor;
+
+    &-content {
+      color: $color;
+      padding: 1rem;
+      line-height: 1.2;
+    }
+  }
+  .genre-actions {
+    padding: 0;
+    min-height: min-content;
+  }
+  .genre-close-button {
+    background-color: rgb(28, 28, 28);
+    color: $color;
+  }
+}

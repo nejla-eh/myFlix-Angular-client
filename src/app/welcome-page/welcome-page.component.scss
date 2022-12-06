@@ -1,0 +1,26 @@
+:host {
+  .main-page {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+
+    h1 {
+      color: #bcbcbc;
+      margin-bottom: 1rem;
+    }
+
+    .sign-up {
+      background-color: rgb(136, 55, 154);
+      color: white;
+    }
+
+    .log-in {
+      background-color: #bcbcbc;
+      color: rgb(43, 41, 41);
+    }
+  }
+}
